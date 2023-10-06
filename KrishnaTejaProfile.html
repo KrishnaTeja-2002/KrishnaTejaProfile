@@ -1,0 +1,144 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+    <meta charset="UTF-8">
+    <title>Krishna Teja Rangavajjala - Resume</title>
+    <style>
+        body {
+            font-family: Arial, sans-serif;
+            background-color: #f0f0f0;
+            margin: 0;
+            padding: 0;
+        }
+
+        .section-box {
+            background-color: white;
+            margin: 20px;
+            padding: 20px;
+            box-shadow: 0px 0px 10px rgba(0, 0, 0, 0.1);
+        }
+
+        .side-heading {
+            font-size: 24px;
+            margin-top: 20px;
+            cursor: pointer;
+            color: orange;
+        }
+
+        .content {
+            display: none;
+        }
+
+        a {
+            color: #0073e6;
+            text-decoration: none;
+        }
+
+        a:hover {
+            text-decoration: underline;
+        }
+    </style>
+</head>
+
+<body>
+    <header>
+        <h1>Krishna Teja Rangavajjala</h1>
+        <p>Contact: +1(919)-650-9541</p>
+        <p>Email:  <a href="mailto:krishnatejarangavajjala@gmail.com">krishnatejarangavajjala@gmail.com</a></p>
+        <p>LinkedIn:  <a href="https://www.linkedin.com/in/krishna-teja-rangavajjala/">https://www.linkedin.com/in/krishna-teja-rangavajjala/</a></p>
+        <!-- You can add your photo here -->
+        <!-- <img src="C:\Users\USER\Desktop\your_photo.jpg" alt="Krishna Teja Rangavajjala"> -->
+    </header>
+
+    <div class="section-box">
+        <div class="side-heading" onclick="toggleSection('education')">Education</div>
+        <div class="content" id="education">
+            <p>Saint Louis University | Master of Science in Computer Science | Aug 2023 – Aug 2025</p>
+            <p>CVR College of Engineering | Bachelor of Technology in Information Technology | 2019-2023</p>
+        </div>
+    </div>
+
+    <div class="section-box">
+        <div class="side-heading" onclick="toggleSection('coursework')">Coursework</div>
+        <div class="content" id="coursework">
+            <p>Graduate: Python, Computing and Society, Web Programming.</p>
+            <p>Undergraduate: C, Java, Web Programming, Design and Analysis of Algorithms, Object-Oriented Programming, Operating Systems, Cryptography, Data Communication and Computer Networks, Relational Database Management Systems, Data Mining, Cloud Computing, Software Engineering, Web Technologies</p>
+        </div>
+    </div>
+
+    <div class="section-box">
+        <div class="side-heading" onclick="toggleSection('skills')">Technical Skills</div>
+        <div class="content" id="skills">
+            <p>Languages: Java, C, Python, JavaScript, HTML, CSS.</p>
+            <p>Frameworks and Databases: Angular JS, React JS, Pandas, NumPy, MySQL, SQL.</p>
+            <p>Dev Tools: Visual Studio Code, Postman, Git, Gitlab, IntelliJ, Jupyter, Spyder.</p>
+        </div>
+    </div>
+
+    <div class="section-box">
+        <div class="side-heading" onclick="toggleSection('projects')">Projects</div>
+        <div class="content" id="projects">
+            <h3>The Movie Recommendation System</h3>
+                        <li>Python Specialist with AI and Recommendation Systems expertise.</li>
+            <li>Proficient in Pandas, NumPy, and Scikit-learn for data-driven solutions.</li>
+            <li>Skilled in Cosine Similarity and Count Vectorization for personalized movie recommendations.</li>
+            <li>Adept at data preprocessing, analysis, and Natural Language Processing.</li>
+            <li>Enthusiastic about enhancing user experiences using intelligent algorithms.</li>
+            <li>Strong focus on improving user engagement and satisfaction.</li>
+            <li>Seeking opportunities for skill application, collaboration, and successful solutions.</li>
+            <li>Passionate about leveraging data to drive informed decision-making.</li>
+            <!-- Add more details about the project here -->
+            <!-- You can use paragraphs and bullet points as needed -->
+
+            <h3>Predict Cancellation of Hotel Bookings</h3>
+            <li>Executed a significant project on hotel booking cancellation prediction using machine learning techniques.</li>
+            <li>Achieved accurate results by implementing advanced algorithms: Decision Tree, Random Forest, KNN, and Logistic Regression.</li>
+            <li>Took charge of entire project lifecycle, overseeing all phases from data acquisition to successful model deployment.</li>
+            <li>Demonstrated expertise in handling end-to-end project responsibilities.</li>
+            <li>Utilized machine learning to address real-world challenges in the hospitality industry.</li>
+            <!-- Add more details about the project here -->
+            <!-- You can use paragraphs and bullet points as needed -->
+        </div>
+    </div>
+
+    <div class="section-box">
+        <div class="side-heading" onclick="toggleSection('personal-skills')">Personal Skills</div>
+        <div class="content" id="personal-skills">
+            <ul>
+                <li>Self-directed learning.</li>
+                <li>Ability to work under pressure.</li>
+                <li>Decision making.</li>
+                <li>Self-motivation.</li>
+                <li>Adaptability.</li>
+                <li>Leadership qualities.</li>
+                <li>Time management skills.</li>
+                <li>Multi-tasking.</li>
+            </ul>
+        </div>
+    </div>
+
+    <div class="section-box">
+        <div class="side-heading" onclick="toggleSection('certifications')">Certifications</div>
+        <div class="content" id="certifications">
+            <ul>
+                <li>Cloud Computing with Google.</li>
+                <li>SQL with Oracle.</li>
+                <li>Technical Hackathon.</li>
+            </ul>
+        </div>
+    </div>
+
+    <script>
+        function toggleSection(sectionId) {
+            var content = document.getElementById(sectionId);
+            if (content.style.display === "none" || content.style.display === "") {
+                content.style.display = "block";
+            } else {
+                content.style.display = "none";
+            }
+        }
+    </script>
+</body>
+
+</html>
